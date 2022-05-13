@@ -1,0 +1,28 @@
+ref pour delete dans la console
+(async function deletePhoto(id) {
+          await fetch("http://localhost:8080/photoz/" + id, {
+                    method: "DELETE"
+          })
+})("5")
+
+@PostMapping("/photoz")
+public Photo create(Photo photo){
+  photo.setId(UUID.randomUUID().toString());
+    db.put(photo.getId(),photo);
+    return photo;
+}
+
+FUNCTION for create photo in localhost
+(async function createPhoto() {
+          let photo = {"fileName": "hello.jpg"};
+          await fetch("http://localhost:8080/photoz", {
+                    method: "POST",
+                    headers: {
+                              "Accept": "application/json",
+                              "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(photo)
+                    })
+                    .then(result => result.text())
+                    .then(text => alert(text));
+})();
