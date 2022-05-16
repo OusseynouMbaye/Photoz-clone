@@ -1,5 +1,7 @@
 package com.jetbrains.ouzinem.photoz.clone;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.validation.constraints.NotEmpty;
 
 public class Photo {
@@ -8,6 +10,7 @@ public class Photo {
     @NotEmpty
     private String fileName;
 
+    @JsonIgnore
     private  byte[] data;
 
     public Photo() {
