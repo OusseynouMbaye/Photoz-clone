@@ -1,5 +1,6 @@
-package com.jetbrains.ouzinem.photoz.clone;
+package com.jetbrains.ouzinem.photoz.clone.service;
 
+import com.jetbrains.ouzinem.photoz.clone.model.Photo;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;

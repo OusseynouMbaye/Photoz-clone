@@ -1,5 +1,7 @@
-package com.jetbrains.ouzinem.photoz.clone;
+package com.jetbrains.ouzinem.photoz.clone.web;
 
+import com.jetbrains.ouzinem.photoz.clone.model.Photo;
+import com.jetbrains.ouzinem.photoz.clone.service.PhotozService;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

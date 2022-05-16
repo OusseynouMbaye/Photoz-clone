@@ -1,4 +1,4 @@
-package com.jetbrains.ouzinem.photoz.clone;
+package com.jetbrains.ouzinem.photoz.clone.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
